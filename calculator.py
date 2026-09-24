@@ -1,5 +1,5 @@
-def add(a, b):
-    return a + b
+def add(a, b, c):
+    return a + b + c
 
 def subtract(a, b):
     return a - b
@@ -7,8 +7,10 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
+def power(a, b):
+    return a ** b
+
 def divide(a, b):
     if b == 0:
-        raise ZeroDivisionError("Cannot divide by zero")  # match your test
+        raise ValueError("Division by zero is not allowed")
     return a / b
-
